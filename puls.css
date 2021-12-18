@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+}
+ .conteiner {
+     display: block;
+     position: relative;
+     width: 100%;
+     
+ }
+ .box {
+     position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+
+ }
+ .krug {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgb(40, 172, 0);
+      box-shadow: 0 0 0 rgda(40, 172, 0);
+      animation: puls 2s infinite;
+ }
