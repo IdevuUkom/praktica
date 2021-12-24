@@ -8,15 +8,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #000;
+    background: #3a3a3a;
     overflow: hidden;
 }
- .conteiner {
-     display: block;
-     position: relative;
-     width: 100%;
+
      
- }
+ 
  .box {
      position: center;
      display: flex;
@@ -26,10 +23,40 @@ body {
 
  }
  .krug {
+     position: relative;
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      background: rgb(40, 172, 0);
-      box-shadow: 0 0 0 rgda(40, 172, 0);
-      animation: puls 2s infinite;
+      cursor: pointer;
+      border: 3px solid rgb(0, 0, 0);
+      background-color: rgb(40, 172, 0);
+      box-shadow: rgb(40, 172, 0);
+      animation: puls 0.5s ease-in-out infinite;
+      transform-origin: bottom left;
  }
+ @keyframes puls {
+     0%{
+         -webkit-box-shadow: 0 0 0 0 rgb(40, 172, 0);
+
+     }
+     50%{
+        -webkit-box-shadow: 0 0 0 50px rgb(40, 172, 0);
+     }
+     100%{
+        -webkit-box-shadow: 0 0 0 0 rgb(40, 172, 0);
+     }
+ }
+ @keyframes puls {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgb(40, 172, 0, 0.4);
+      box-shadow: 0 0 0 0 rgb(40, 172, 0, 0.4);
+    }
+    50% {
+        -moz-box-shadow: 0 0 0 50px rgb(40, 172, 0, 0);
+        box-shadow: 0 0 0 50px rgb(40, 172, 0, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgb(40, 172, 0, 0);
+        box-shadow: 0 0 0 0 rgb(40, 172, 0, 0);
+    }
+  }
